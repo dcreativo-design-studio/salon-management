@@ -199,7 +199,7 @@ const About = () => {
                       {member.userId?.firstName} {member.userId?.lastName}
                     </h3>
                     <p className="text-primary mb-3">{member.title}</p>
-                    // src/pages/About.jsx (continued)
+
                     <p className="text-neutral-600 mb-4">{member.bio}</p>
                     <div className="flex flex-wrap justify-center gap-2">
                       {member.specialties && member.specialties.map((specialty, index) => (

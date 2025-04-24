@@ -326,7 +326,7 @@ const Home = () => {
                     />
                   </div>
                   <div className="p-6">
-                  // src/pages/Home.jsx (continued)
+
                     <h3 className="text-xl font-serif font-semibold mb-1">
                       {member.userId?.firstName} {member.userId?.lastName}
                     </h3>
