@@ -213,9 +213,9 @@ const Reports = () => {
       <div className="p-4 sm:p-6 md:p-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
           <div>
-            <h1 className="text-2xl font-serif font-bold mb-1">My Reports</h1>
+            <h1 className="text-2xl font-serif font-bold mb-1">I miei resoconti</h1>
             <p className="text-neutral-600">
-              View and analyze your appointment statistics.
+            Visualizza e analizza le statistiche dei tuoi appuntamenti.
             </p>
           </div>
           <div className="mt-4 md:mt-0 space-x-2 flex">
@@ -271,18 +271,18 @@ const Reports = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium text-neutral-800">Total</h3>
+                <h3 className="text-lg font-medium text-neutral-800">Totale</h3>
                 <div className="p-3 bg-blue-100 rounded-full">
                   <FaCalendarAlt className="text-blue-500" />
                 </div>
               </div>
               <p className="text-3xl font-bold">{appointmentStats.total}</p>
-              <p className="text-sm text-neutral-500 mt-1">Appointments</p>
+              <p className="text-sm text-neutral-500 mt-1">Appuntamenti</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium text-neutral-800">Completed</h3>
+                <h3 className="text-lg font-medium text-neutral-800">Completato</h3>
                 <div className="p-3 bg-green-100 rounded-full">
                   <FaUserClock className="text-green-500" />
                 </div>
@@ -293,13 +293,13 @@ const Reports = () => {
 
             <div className="bg-white p-6 rounded-lg shadow">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium text-neutral-800">Cancelled</h3>
+                <h3 className="text-lg font-medium text-neutral-800">Annullato</h3>
                 <div className="p-3 bg-red-100 rounded-full">
                   <FaCalendarAlt className="text-red-500" />
                 </div>
               </div>
               <p className="text-3xl font-bold">{appointmentStats.cancelled}</p>
-              <p className="text-sm text-neutral-500 mt-1">Cancelled appointments</p>
+              <p className="text-sm text-neutral-500 mt-1">Appuntamenti annullati</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow">
@@ -310,7 +310,7 @@ const Reports = () => {
                 </div>
               </div>
               <p className="text-3xl font-bold">{appointmentStats.noShow}</p>
-              <p className="text-sm text-neutral-500 mt-1">Missed appointments</p>
+              <p className="text-sm text-neutral-500 mt-1">Appuntamenti mancati</p>
             </div>
           </div>
         )}

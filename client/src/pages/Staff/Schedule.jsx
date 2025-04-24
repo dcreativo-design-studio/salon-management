@@ -245,7 +245,7 @@ const Schedule = () => {
           <div>
             <h1 className="text-2xl font-serif font-bold mb-1">My Schedule</h1>
             <p className="text-neutral-600">
-              Manage your working hours and breaks for each day of the week.
+            Gestisci i tuoi orari di lavoro e le pause per ogni giorno della settimana.
             </p>
           </div>
           <div className="mt-4 md:mt-0 space-x-4 flex">
@@ -261,7 +261,7 @@ const Schedule = () => {
               disabled={saving}
             >
               {saving ? <FaSpinner className="animate-spin" /> : <FaSave />}
-              Save Changes
+              Salva modifiche
             </button>
           </div>
         </div>
@@ -278,7 +278,7 @@ const Schedule = () => {
                 <div className="p-4 border-b border-neutral-200 bg-neutral-50">
                   <h2 className="font-serif font-semibold flex items-center gap-2">
                     <FaCalendarAlt className="text-primary" />
-                    Weekly Schedule
+                    Programma settimanale
                   </h2>
                 </div>
 
@@ -309,7 +309,7 @@ const Schedule = () => {
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                               <label className="block text-sm font-medium text-neutral-700 mb-1">
-                                Start Time
+                              Ora di inizio
                               </label>
                               <select
                                 className="w-full p-2 border border-neutral-300 rounded-md"
@@ -349,7 +349,7 @@ const Schedule = () => {
                                 className="text-sm text-primary flex items-center gap-1 hover:text-primary-dark"
                                 onClick={() => addBreak(dayIndex)}
                               >
-                                <FaPlus size={12} /> Add Break
+                                <FaPlus size={12} /> Aggiungi pausa
                               </button>
                             </div>
 
@@ -412,7 +412,7 @@ const Schedule = () => {
                                 ))}
                               </div>
                             ) : (
-                              <p className="text-sm text-neutral-500 italic">No breaks set for this day.</p>
+                              <p className="text-sm text-neutral-500 italic">Nessuna pausa prevista per questa giornata.</p>
                             )}
                           </div>
                         </div>
@@ -430,7 +430,7 @@ const Schedule = () => {
                   <div className="p-4 border-b border-neutral-200 bg-neutral-50">
                     <h2 className="font-serif font-semibold flex items-center gap-2">
                       <FaClock className="text-primary" />
-                      Upcoming Appointments
+                      Prossimi appuntamenti
                     </h2>
                   </div>
 
@@ -449,7 +449,7 @@ const Schedule = () => {
                       ))
                     ) : (
                       <div className="p-6 text-center">
-                        <p className="text-neutral-500">No upcoming appointments.</p>
+                        <p className="text-neutral-500">Nessun appuntamento imminente.</p>
                       </div>
                     )}
                   </div>
